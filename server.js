@@ -48,7 +48,7 @@ app.post('/api/shorturl', function(req, res) {
   console.log("something", something)
 });
 
-app.get("/api/:id", (req, res) => {
+app.get("/api/shorturl/:id", (req, res) => {
   const id = req.params.id;
   Url.findById(id, (err, data) => {
     if(!data){
